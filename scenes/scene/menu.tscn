@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c68oq3ob5s0bt"]
+
+[ext_resource type="Texture2D" uid="uid://m2nrd2t8ba6b" path="res://assets/sprits/menu-background.jpeg" id="1_6vxqw"]
+[ext_resource type="PackedScene" uid="uid://iq7fojxjpmey" path="res://scenes/hud/menu-hud.tscn" id="2_6uiio"]
+
+[node name="menu" type="Node2D"]
+
+[node name="Menu-background" type="Sprite2D" parent="."]
+position = Vector2(239, 360)
+texture = ExtResource("1_6vxqw")
+
+[node name="Control" parent="." instance=ExtResource("2_6uiio")]

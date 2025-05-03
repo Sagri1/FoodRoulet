@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://dl0o41sge0mxd"]
+
+[ext_resource type="Texture2D" uid="uid://0j0t1rbjka5o" path="res://assets/sprits/menu-start-button.jpeg" id="1_x01wa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ynyu2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b54i8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2xuc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fjh0h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2qhfl"]
+size = Vector2(100, 50)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 88.0
+offset_right = 315.0
+offset_bottom = 135.0
+text = "кол-во игроков"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 121.0
+offset_right = 248.0
+offset_bottom = 144.0
+text = "2"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Control"]
+position = Vector2(163, 132)
+shape = SubResource("RectangleShape2D_ynyu2")
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="Control"]
+position = Vector2(319, 132)
+shape = SubResource("RectangleShape2D_b54i8")
+
+[node name="Control2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label2" type="Label" parent="Control2"]
+offset_left = 174.0
+offset_top = 172.0
+offset_right = 314.0
+offset_bottom = 219.0
+text = "кол-во раундов"
+
+[node name="Label" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 200.0
+offset_right = 253.0
+offset_bottom = 223.0
+text = "2"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Control2"]
+position = Vector2(164, 214)
+shape = SubResource("RectangleShape2D_v2xuc")
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="Control2"]
+position = Vector2(318, 217)
+shape = SubResource("RectangleShape2D_fjh0h")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(196, 360)
+texture_normal = ExtResource("1_x01wa")
+shape = SubResource("RectangleShape2D_2qhfl")

@@ -1,0 +1,300 @@
+[gd_scene load_steps=14 format=3 uid="uid://iq7fojxjpmey"]
+
+[ext_resource type="Texture2D" uid="uid://0j0t1rbjka5o" path="res://assets/sprits/menu-start-button.jpeg" id="1_ht15d"]
+[ext_resource type="Script" uid="uid://bmhw176bamo0k" path="res://scripts/menu_hud.gd" id="1_mf08s"]
+[ext_resource type="Texture2D" uid="uid://c6vb3a3qpewr2" path="res://assets/sprits/recept-button.jpeg" id="3_smpov"]
+[ext_resource type="Texture2D" uid="uid://qoy8n0w5nnj7" path="res://assets/sprits/mode-button.jpeg" id="4_mhe22"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhe22"]
+size = Vector2(100, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwgay"]
+size = Vector2(100, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eq0gu"]
+size = Vector2(100, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yd5aw"]
+size = Vector2(100, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qe75o"]
+size = Vector2(100, 50)
+
+[sub_resource type="Animation" id="Animation_smpov"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("menu/button-start/Label:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(74.4445, 34.4444)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("menu/button-start/TouchScreenButton:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(85, 80)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("menu/button-start/TouchScreenButton2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(85, 150)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("menu/button-start/Label2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(74, 34)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("menu/button-start/TouchScreenButton3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(85, 80)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("menu/button-start/TouchScreenButton4:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(85, 150)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("menu/button-start/TouchScreenButton5:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(85, 220)]
+}
+
+[sub_resource type="Animation" id="Animation_mf08s"]
+resource_name = "switch"
+length = 0.75
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("menu/button-start/Label:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(74, 34), Vector2(74, 754)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("menu/button-start/TouchScreenButton:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(85, 80), Vector2(85, 800)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("menu/button-start/TouchScreenButton2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(85, 150), Vector2(85, 870)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("menu/button-start/Label2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.25, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(74, -686), Vector2(74, 34)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("menu/button-start/TouchScreenButton3:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.25, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(85, -640), Vector2(85, 80)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("menu/button-start/TouchScreenButton4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.25, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(85, -570), Vector2(85, 150)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("menu/button-start/TouchScreenButton5:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.25, 0.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(85, -500), Vector2(85, 220)]
+}
+
+[sub_resource type="Animation" id="Animation_eq0gu"]
+resource_name = "transition"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_smpov"]
+_data = {
+&"RESET": SubResource("Animation_smpov"),
+&"switch": SubResource("Animation_mf08s"),
+&"transition": SubResource("Animation_eq0gu")
+}
+
+[node name="menu-hud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mf08s")
+
+[node name="menu" type="Node2D" parent="."]
+
+[node name="button-start" type="Node2D" parent="menu"]
+scale = Vector2(1.8, 1.8)
+
+[node name="Label" type="Label" parent="menu/button-start"]
+offset_left = 74.0
+offset_top = 34.0
+offset_right = 195.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 24
+text = "food rullet"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="menu/button-start"]
+position = Vector2(85, 80)
+texture_normal = ExtResource("1_ht15d")
+shape = SubResource("RectangleShape2D_mhe22")
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="menu/button-start"]
+position = Vector2(85, 150)
+texture_normal = ExtResource("3_smpov")
+shape = SubResource("RectangleShape2D_cwgay")
+
+[node name="Label2" type="Label" parent="menu/button-start"]
+offset_left = 74.0
+offset_top = -686.0
+offset_right = 195.0
+offset_bottom = -652.0
+theme_override_font_sizes/font_size = 24
+text = "режим"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="menu/button-start"]
+position = Vector2(85, 80)
+texture_normal = ExtResource("4_mhe22")
+shape = SubResource("RectangleShape2D_eq0gu")
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="menu/button-start"]
+position = Vector2(85, 150)
+texture_normal = ExtResource("4_mhe22")
+shape = SubResource("RectangleShape2D_yd5aw")
+
+[node name="TouchScreenButton5" type="TouchScreenButton" parent="menu/button-start"]
+position = Vector2(85, 220)
+texture_normal = ExtResource("4_mhe22")
+shape = SubResource("RectangleShape2D_qe75o")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_smpov")
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -167.0
+offset_top = -141.0
+offset_right = 665.0
+offset_bottom = 866.0
+color = Color(0, 0, 0, 0)

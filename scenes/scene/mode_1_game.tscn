@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://c67rmhenm72h3"]
+
+[ext_resource type="Script" uid="uid://d1qaj73pkfg1e" path="res://scripts/mode_1_game.gd" id="1_kvq8w"]
+[ext_resource type="Texture2D" uid="uid://ck3derowgq68" path="res://assets/sprits/game_1-background.jpeg" id="2_5y0ds"]
+[ext_resource type="Texture2D" uid="uid://dall3up8gg5kg" path="res://assets/sprits/e592a6a7-32f9-4984-b125-64a7123315f9.png" id="3_3kdiy"]
+[ext_resource type="Script" uid="uid://btipc67jrof2h" path="res://scripts/wheel.gd" id="4_5y0ds"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvq8w"]
+size = Vector2(100, 50)
+
+[node name="mode1game" type="Node2D"]
+script = ExtResource("1_kvq8w")
+
+[node name="Game1-background" type="Sprite2D" parent="."]
+position = Vector2(240, 360)
+texture = ExtResource("2_5y0ds")
+
+[node name="Node2D2" type="Node2D" parent="."]
+
+[node name="E592a6a7-32f9-4984-b125-64a7123315f9" type="Sprite2D" parent="Node2D2"]
+position = Vector2(240, 10)
+scale = Vector2(0.684667, 0.684667)
+texture = ExtResource("3_3kdiy")
+script = ExtResource("4_5y0ds")
+
+[node name="Marker2D" type="Marker2D" parent="Node2D2"]
+position = Vector2(242, 0)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Node2D"]
+position = Vector2(236, 291)
+shape = SubResource("RectangleShape2D_kvq8w")
+
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 206.0
+offset_top = 277.0
+offset_right = 271.0
+offset_bottom = 300.0
+text = "крутить"
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = 146.0
+offset_top = 281.0
+offset_right = 166.0
+offset_bottom = 301.0
+
+[connection signal="pressed" from="Node2D/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2jj3pny4w56o"]
+
+[ext_resource type="Texture2D" uid="uid://01mxkhhw75d4" path="res://assets/sprits/mode_1_pre-game-background.jpeg" id="1_8sn4c"]
+[ext_resource type="PackedScene" uid="uid://dl0o41sge0mxd" path="res://scenes/hud/mode_1_pre-game-hud.tscn" id="2_6dwxl"]
+
+[node name="mode1pre-game" type="Node2D"]
+
+[node name="Mode1Pre-game-background" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(240, 360)
+texture = ExtResource("1_8sn4c")
+
+[node name="Control" parent="." instance=ExtResource("2_6dwxl")]
