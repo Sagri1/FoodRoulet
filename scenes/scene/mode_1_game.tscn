@@ -18,7 +18,7 @@ texture = ExtResource("2_5y0ds")
 [node name="Node2D2" type="Node2D" parent="."]
 
 [node name="E592a6a7-32f9-4984-b125-64a7123315f9" type="Sprite2D" parent="Node2D2"]
-position = Vector2(240, 10)
+position = Vector2(241, 259)
 scale = Vector2(0.684667, 0.684667)
 texture = ExtResource("3_3kdiy")
 script = ExtResource("4_5y0ds")
@@ -29,27 +29,27 @@ position = Vector2(242, 0)
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="Node2D"]
-position = Vector2(236, 291)
+position = Vector2(226, 546)
 shape = SubResource("RectangleShape2D_kvq8w")
 
 [node name="Label" type="Label" parent="Node2D"]
-offset_left = 206.0
-offset_top = 277.0
-offset_right = 271.0
-offset_bottom = 300.0
+offset_left = 194.0
+offset_top = 534.0
+offset_right = 259.0
+offset_bottom = 557.0
 text = "крутить"
 
 [node name="Button" type="Button" parent="Node2D"]
-offset_left = 146.0
-offset_top = 281.0
-offset_right = 166.0
-offset_bottom = 301.0
+offset_left = 122.0
+offset_top = 533.0
+offset_right = 142.0
+offset_bottom = 553.0
 
 [node name="Label" type="Label" parent="."]
-offset_left = 110.0
-offset_top = 332.0
-offset_right = 364.0
-offset_bottom = 406.0
+offset_left = 97.0
+offset_top = 596.0
+offset_right = 351.0
+offset_bottom = 670.0
 
 [node name="exit" type="Button" parent="."]
 offset_right = 32.0
