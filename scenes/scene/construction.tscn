@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b53hegvr0q3tr"]
+
+[ext_resource type="Script" uid="uid://dmr7ijn77qo4t" path="res://scripts/construction.gd" id="1_srrgd"]
+[ext_resource type="Texture2D" uid="uid://01mxkhhw75d4" path="res://assets/sprits/mode_1_pre-game-background.jpeg" id="1_xejbn"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_srrgd")
+
+[node name="Mode1Pre-game-background" type="Sprite2D" parent="."]
+position = Vector2(240, 360)
+texture = ExtResource("1_xejbn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 148.0
+offset_top = 163.0
+offset_right = 322.0
+offset_bottom = 199.0
+theme_override_font_sizes/font_size = 26
+text = "в разработке"
+
+[node name="Button" type="Button" parent="."]
+offset_right = 29.0
+offset_bottom = 27.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

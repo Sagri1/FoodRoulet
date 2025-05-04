@@ -45,4 +45,15 @@ offset_top = 281.0
 offset_right = 166.0
 offset_bottom = 301.0
 
+[node name="Label" type="Label" parent="."]
+offset_left = 110.0
+offset_top = 332.0
+offset_right = 364.0
+offset_bottom = 406.0
+
+[node name="exit" type="Button" parent="."]
+offset_right = 32.0
+offset_bottom = 30.0
+
 [connection signal="pressed" from="Node2D/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
